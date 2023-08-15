@@ -1,7 +1,6 @@
 const { port } = require('./configs');
 const Database = require('./data-source');
 const app = require('./app');
-const Logger = require('./core/Logger');
 
 (async () => {
     try {
