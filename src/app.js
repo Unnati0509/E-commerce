@@ -9,7 +9,7 @@ const methodOverride = require('method-override');
 const { secret } = require('./configs');
 const { healthcheckRoutes, v1Routes } = require('./routes');
 const User = require('./models/User');
-const MongoStore = require('connect-mongo')(session);
+const MongoStore = require('connect-mongo');
 const { dbUrl } = require('./configs/database');
 
 const app = express();
